@@ -15,6 +15,7 @@
 		CE4F1BAF1E96279800719DC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4F1BAE1E96279800719DC1 /* Assets.xcassets */; };
 		CE4F1BB21E96279800719DC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4F1BB01E96279800719DC1 /* LaunchScreen.storyboard */; };
 		CE4F1BBD1E96279800719DC1 /* NewsFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F1BBC1E96279800719DC1 /* NewsFeedTests.swift */; };
+		CEC18A601E974A3600E7D5E0 /* NewsAPIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC18A5F1E974A3600E7D5E0 /* NewsAPIKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		CE4F1BB81E96279800719DC1 /* NewsFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4F1BBC1E96279800719DC1 /* NewsFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedTests.swift; sourceTree = "<group>"; };
 		CE4F1BBE1E96279800719DC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC18A5F1E974A3600E7D5E0 /* NewsAPIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsAPIKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		CE4F1BA61E96279800719DC1 /* NewsFeed */ = {
 			isa = PBXGroup;
 			children = (
+				CEC18A5E1E974A0A00E7D5E0 /* APIs */,
 				CE4F1BA71E96279800719DC1 /* AppDelegate.swift */,
 				CE4F1BA91E96279800719DC1 /* ViewController.swift */,
 				CE4F1BAB1E96279800719DC1 /* Main.storyboard */,
@@ -126,6 +129,14 @@
 				CE4F1BBE1E96279800719DC1 /* Info.plist */,
 			);
 			path = NewsFeedTests;
+			sourceTree = "<group>";
+		};
+		CEC18A5E1E974A0A00E7D5E0 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				CEC18A5F1E974A3600E7D5E0 /* NewsAPIKey.swift */,
+			);
+			path = APIs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE4F1BAA1E96279800719DC1 /* ViewController.swift in Sources */,
+				CEC18A601E974A3600E7D5E0 /* NewsAPIKey.swift in Sources */,
 				CE4F1BA81E96279800719DC1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
