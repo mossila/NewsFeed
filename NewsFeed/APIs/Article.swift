@@ -9,6 +9,25 @@
 import UIKit
 import ObjectMapper
 
+struct ArticleResponse: Mappable {
+    var status: String!
+    var source: String!
+    var sortBy: String!
+    var articles:[Article]!
+    init?(map: Map) {
+        guard map.JSON["status"] as? String == "ok",
+            map.JSON["source"] != nil else {
+                return nil
+        }
+    }
+    mutating func mapping(map: Map) {
+        status <- map["status"]
+        source <- map["source"]
+        sortBy <- map["sortBy"]
+        articles <- map["articles"]
+    }
+}
+
 struct Article: Mappable {
     var title: String!
     var description: String!
