@@ -8,6 +8,6 @@
 
 import UIKit
 
-struct NewsAPI {
-    let apiKey = "452de9db12a4456c98e72d3075baae05"
+extension NewsAPI {
+    static let apiKey = "452de9db12a4456c98e72d3075baae05"
 }

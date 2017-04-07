@@ -15,8 +15,8 @@ import ObjectMapper
 class ArticleSpec: QuickSpec {
     
     override func spec() {
-        describe("Article") {
-            context("Some fields is missing") {
+        Quick.describe("Article") {
+            Quick.context("Some fields is missing") {
                 it("can not init with no title") {
                     let jsonTitleMissing:[String:Any]  = [ "description": "content",
                                                            "urlToImage":"https://tctechcrunch2011.files.wordpress.com/2015/09/osmo.jpg?w=764&h=400&crop=1",
