@@ -33,38 +33,6 @@
             endingLineNumber = "30"
             landmarkName = "spec()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NewsFeedTests.NewsListViewControllerSpec.(spec () -&gt; ()).(closure #2)"
-                  moduleName = "NewsFeedTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mossial/Developer/NewsFeed/NewsFeedTests/Controller/NewsListViewControllerSpec.swift"
-                  timestampString = "513239404.920392"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "162">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NewsFeedTests.NewsListViewControllerSpec.(spec () -&gt; ()).(closure #2).(closure #2)"
-                  moduleName = "NewsFeedTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mossial/Developer/NewsFeed/NewsFeedTests/Controller/NewsListViewControllerSpec.swift"
-                  timestampString = "513239404.92267"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "593">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
