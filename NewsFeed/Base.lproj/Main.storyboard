@@ -34,13 +34,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_tc" translatesAutoresizingMaskIntoConstraints="NO" id="abY-LE-evS">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="159"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="137"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="abY-LE-evS" secondAttribute="height" multiplier="40:17" id="092-pF-ipg"/>
+                                                        <constraint firstAttribute="width" secondItem="abY-LE-evS" secondAttribute="height" multiplier="40:17" priority="999" id="092-pF-ipg"/>
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rrc-gf-Plg" userLabel="TextView">
-                                                    <rect key="frame" x="0.0" y="103" width="375" height="56"/>
+                                                    <rect key="frame" x="0.0" y="81" width="375" height="56"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="753" text="description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5n-CM-pQZ">
                                                             <rect key="frame" x="8" y="30" width="359" height="18"/>
