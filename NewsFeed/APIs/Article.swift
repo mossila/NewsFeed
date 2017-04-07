@@ -16,13 +16,19 @@ struct Article: Mappable {
     var url: URL!
     
     // MARK: JSON
-    init?(map: Map) { }
+    init?(map: Map) {
+        guard map.JSON["title"] != nil else { return nil}
+        guard map.JSON["description"] != nil else { return nil}
+        guard map.JSON["urlToImage"] != nil else { return nil}
+        guard map.JSON["url"] != nil else { return nil}
+        guard let urlToImage = map.JSON["urlToImage"], let _ = URL(string:urlToImage as! String) else { return nil }
+        guard let url = map.JSON["url"], let _ = URL(string:url as! String) else { return nil }
+    }
     
     mutating func mapping(map: Map) {
         title <- map["title"]
         description <- map["description"]
-        urlToImage <- map["urlToImage"]
-        url <- map["url"]
-        
+        urlToImage <- (map["urlToImage"], URLTransform())
+        url <- (map["url"],URLTransform())
     }
 }

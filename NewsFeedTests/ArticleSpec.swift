@@ -51,10 +51,10 @@ class ArticleSpec: QuickSpec {
             
             context("All fields are set.") {
                 let json:[String:Any] = [ "title" : "Heading News",
-                             "description": "content",
-                             "urlToImage":"https://tctechcrunch2011.files.wordpress.com/2015/09/osmo.jpg?w=764&h=400&crop=1",
-                             "url": "https://techcrunch.com/2017/04/06/how-osmo-decides-to-make-its-tangible-high-tech-toys/",
-                             ]
+                                          "description": "content",
+                                          "urlToImage":"https://tctechcrunch2011.files.wordpress.com/2015/09/osmo.jpg?w=764&h=400&crop=1",
+                                          "url": "https://techcrunch.com/2017/04/06/how-osmo-decides-to-make-its-tangible-high-tech-toys/",
+                                          ]
                 var article: Article?
                 beforeEach {
                     article = Article(JSON: json)
@@ -75,6 +75,29 @@ class ArticleSpec: QuickSpec {
                     expect(article?.urlToImage).to(beAnInstanceOf(URL.self))
                 }
             }
+            
+            context("url is invalid") {
+                it("has wrong url") {
+                    let wrongURL:[String:Any]  = [ "title" : "Heading News",
+                                                           "description": "content",
+                                                           "urlToImage":"https://tctechcrunch2011.files.wordpress.com/2015/09/osmo.jpg?w=764&h=400&crop=1",
+                                                           "url": "",
+                                                           ]
+                    let article = Article(JSON: wrongURL)
+                    expect(article).to(beNil())
+                }
+                it("has wrong url to image") {
+                    let wrongURLToImage:[String:Any]  = [ "title" : "Heading News",
+                                                   "description": "content",
+                                                   "urlToImage":"",
+                                                   "url": "https://techcrunch.com/2017/04/06/how-osmo-decides-to-make-its-tangible-high-tech-toys/",
+                                                   ]
+                    let article = Article(JSON: wrongURLToImage)
+                    expect(article).to(beNil())
+                }
+            }
+
+            
         }
     }
     
