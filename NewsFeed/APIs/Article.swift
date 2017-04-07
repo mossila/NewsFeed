@@ -15,7 +15,7 @@ struct ArticleResponse: Mappable {
     var sortBy: String!
     var articles:[Article]!
     init?(map: Map) {
-        guard map.JSON["status"] as? String != "ok",
+        guard map.JSON["status"] as? String == "ok",
             map.JSON["source"] != nil else {
                 return nil
         }
