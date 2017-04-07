@@ -13,12 +13,13 @@ import SDWebImage
 class NewsListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var articles:[Article]!
-    lazy var model:NewsAPIProtocol = NewsAPIModel()
+    var model:NewsAPIProtocol!
     override func viewDidLoad() {
         super.viewDidLoad()
         articles = []
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 180
+        model = model ?? NewsAPIModel()
         model.getNewsList { [weak self](articles, error) in
             guard let strongSelf = self, articles != nil else {
                 return
