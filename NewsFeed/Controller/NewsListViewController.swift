@@ -59,14 +59,17 @@ class NewsListViewController: UIViewController {
         // Do any additional setup after loading the view.
         articles = Mapper<Article>().mapArray(JSONArray: mockJSON)!
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 240
+        tableView.estimatedRowHeight = 178
         tableView.reloadData()
     }
 }
 
 // MARK : TableViewDelegate
 extension NewsListViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.isSelected = false
+    }
 }
 
 // MARK:  TableViewDataSoruce
