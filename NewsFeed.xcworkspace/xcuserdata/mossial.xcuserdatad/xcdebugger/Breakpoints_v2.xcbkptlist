@@ -6,49 +6,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NewsFeedTests/Controller/NewsListViewControllerSpec.swift"
-            timestampString = "513239303.7542"
+            filePath = "NewsFeed/Model/NewsAPIModel.swift"
+            timestampString = "513270267.821571"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "spec()"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "getNewsList(complete:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NewsFeedTests.NewsListViewControllerSpec.(spec () -&gt; ()).(closure #2)"
-                  moduleName = "NewsFeedTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mossial/Developer/NewsFeed/NewsFeedTests/Controller/NewsListViewControllerSpec.swift"
-                  timestampString = "513264837.46683"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "162">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NewsFeedTests.NewsListViewControllerSpec.(spec () -&gt; ()).(closure #2).(closure #2)"
-                  moduleName = "NewsFeedTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mossial/Developer/NewsFeed/NewsFeedTests/Controller/NewsListViewControllerSpec.swift"
-                  timestampString = "513264837.469017"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "593">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

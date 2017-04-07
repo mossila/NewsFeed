@@ -15,7 +15,7 @@ struct Source {
 protocol NewsAPIProtocol {
     func getNewsList(complete:@escaping ([Article]?, MoyaError?) -> Void)
 }
-struct NewsAPIModel {
+struct NewsAPIModel:NewsAPIProtocol {
     let provider = MoyaProvider<NewsAPI>()
     func getNewsList(complete:@escaping ([Article]?, MoyaError?) -> Void) {
         provider.request(.article(source: Source.techCrunch)) { result in

@@ -11,8 +11,4 @@ import Quick
 @testable import NewsFeed
 class NewsApiModelSpec: QuickSpec {
     
-    override func spec() {
-        
-    }
-    
 }
