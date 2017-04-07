@@ -7,6 +7,8 @@ target 'NewsFeed' do
 
   # Pods for NewsFeed
   pod 'Moya-ObjectMapper'
+  pod 'SDWebImage', '~>3.8'
+
 
   target 'NewsFeedTests' do
     inherit! :search_paths
