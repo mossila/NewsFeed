@@ -13,4 +13,9 @@ class NewsTableViewCell: UITableViewCell {
     @IBOutlet weak var newsImage: UIImageView!
     @IBOutlet weak var descriptionLbl: UILabel!
     @IBOutlet weak var headingLbl: UILabel!
+    func setupDefaultCell() {
+        headingLbl.text = ""
+        descriptionLbl.text = ""
+        newsImage.image = nil
+    }
 }
